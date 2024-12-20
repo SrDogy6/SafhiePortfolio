@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Tab Name-->
+    <title>Safhie's Web Portfolio</title>
+    <!--Just copied from one vid about, its for the icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!--Estilizar pag-->
+    <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!--Menu-->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Safhie</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="#">Home</a></div>
+                <div class="link"><a href="#">About</a></div>
+                <div class="link"><a href="#">Skills</a></div>
+                <div class="link"><a href="#">PGSkills</a></div>
+                <div class="link"><a href="#">Photos</a></div>
+                <div class="link"><a href="#">Draws</a></div>
+                <div class="link"><a href="#">Videos</a></div>
+                <div class="link"><a href="#">Contact</a></div>
+            </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Skills</a>
+                    <a href="#">PGSkills</a>
+                    <a href="#">Photos</a>
+                    <a href="#">Draws</a>
+                    <a href="#">Videos</a>
+                    <a href="#">Contact</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>
+    </nav> 
+    <!--Redes Sociales-->
+    <section>
+        <div class="main-container">
+            <div class="image"><img src="WB_Me.jpg" alt=""></div>
+        <div class="content">
+            <h1 data-aos="fade-left">Hey I'm <span>Safhie</span></h1>
+            <div class="typewriter">I'm a <span class="typewriter-text"></span>
+            <label for="">|</label></div>
+            <p>Whatever i wanna write</p>
+            <!--these are my social contacts-->
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-deviantart"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.twitch.tv/safhieart"><i class="fa-brands fa-twitch"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="#"><i class="fa-brands fa-soundcloud"></i></a>
+                <a href="#"><i class="fa-brands fa-spotify"></i></a>
+                <a href="#"><i class="fa-brands fa-reddit"></i></a>
+                <a href="#"><i class="fa-brands fa-itch-io"></i></a>
+            </div>
+            <a href="https://www.twitch.tv/safhieart"><div class="btn"><button>Watch me Live on Twitch</button></div></a>
+        </div>
+        </div>
+    </section>
+    <!--Sobre mi-->
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title"><span>About Me</span></div>
+            <div class="about-details">
+                <div class="left">
+                    <img src="White_Moon.png" alt="">
+                </div>
+                <div class="right">
+                    <div class="topic">Adoro el arte en todas sus ramas</div>
+                    <p>texto random xd</p>
+                    <div class="button"><button>Curriculum</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Capacidad de programacion (talentos)-->
+    <section class="skills" id="skills">
+        <div class="content">
+            <div class="title"><span>My Programation Skills</span></div>
+            <div class="skills-details">
+                <div class="text">
+                    <div class="topic">Skills Reflects Our Knowledge</div>
+                    <p data-aos="fade-right"> WAAA q put ladilla</p>
+                    <div class="experience">
+                        <div class="num">1</div>
+                        <div class="exp">Year Of <br/>Experience</div>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box"><div class="topic">HTML</div>
+                    <div class="per">10%</div></div>
+                    <div class="box"><div class="topic">CSS</div>
+                    <div class="per">5%</div></div>
+                    <div class="box"><div class="topic">Phyton</div>
+                    <div class="per">15%</div></div>
+                    <div class="box"><div class="topic">C++</div>
+                    <div class="per">5%</div></div>
+                    <div class="box"><div class="topic">JavaScrypt</div>
+                    <div class="per">1%</div></div>
+                    <div class="box"><div class="topic">Kotlin</div>
+                    <div class="per">5%</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Otros Talentos-->
+    <section class="skills" id="skills">
+        <div class="content">
+            <div class="title"><span>Non prgraming Skills</span></div>
+            <div class="skills-details">
+                <div class="text">
+                    <div class="topic">About what I can do</div>
+                    <p data-aos="fade-right"> WAAA q put ladilla2222</p>
+                    <div class="experience">
+                        <div class="num">10</div>
+                        <div class="exp">Year Of <br/>Experience</div>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box"><div class="topic">Traditional Art</div>
+                    <div class="per">40%</div></div>
+                    <div class="box"><div class="topic">Digital Art</div>
+                    <div class="per">50%</div></div>
+                    <div class="box"><div class="topic">Photography</div>
+                    <div class="per">60%</div></div>
+                    <div class="box"><div class="topic">Edition (Photography)</div>
+                    <div class="per">20%</div></div>
+                    <div class="box"><div class="topic">Edition (Videos)</div>
+                    <div class="per">15%</div></div>
+                    <div class="box"><div class="topic">Music Production</div>
+                    <div class="per">20%</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---Mis conocimientos y servicios-->
+    <section class="services" id="services">
+        <div class="content">
+            <div class="title"><span>What I can Do?</span></div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                <div class="topic">Desarrollo general</div>
+                <p>Estoy en proceso de estudio de multiples lenguajes, estudio de forma propia</p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-mobile-android"></i>
+                    </div>
+                <div class="topic">Desarrollo en Andorid</div>
+                <p>Espero desarrollar adicionalmente applicaciones para el uso movil</p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                <div class="topic">Arte e Ilustracion</div>
+                <p>Publico mi arte(cuando lo hago), en mis redes</p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                <div class="topic">Fotografia</div>
+                <p>Tomo fotografias de mi cotidianidad y lo que me gusta</p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                <div class="topic">Musica</div>
+                <p>Estudio teoria musical, y practico para tocar Teclado y Guitarra</p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                
+                <div class="topic">Canto</div>
+                <p>Si es que me animo puede que haga covers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contacto-->
+    <section class="contact" id="contact">
+        <div class="content"><span>Informacion de Contacto</span>
+            <div><div class="text">
+                    <div class="topic">Por ahora no estoy disponible</div>
+                    <p>No pienso en comisiones ni en Trabajar para nadie, solo hago y relizo todo por hobbie</p>
+                    <div class="button"><button>Contactar Igualmente</button></div>
+            </div></div>
+        </div>
+    </section>
+    <!--Pie de Pag-->
+    <footer>
+        <div class="text">
+            <span> Creado por 
+                <a href="#">Safhie S.</a>
+             &#169; 2024 Todos los Derechos Reservados</span>
+        </div>
+    </footer>
+</body>
+</html>
