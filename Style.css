@@ -378,6 +378,16 @@ footer .text span a:hover{
         margin: 40px 0;
     }
     .services .boxes .box{
-        margin: 20px;
+        margin: 20px 0;
+        width: calc(100% /2 - 20px);
     }
 }
+
+@media (max-width: 900px) {
+    .about .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 968px)
