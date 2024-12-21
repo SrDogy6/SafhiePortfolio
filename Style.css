@@ -128,12 +128,44 @@ section .main-container{
 .content h1 span{
     color: #F8C8DC;
     text-shadow: 0 0 10px #F8C8DC;}
-.content .typewriter{
-    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
-    font-weight: 600;}
-.content .typewriter-text{
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.typing-text span{
+    position: relative;
+}
+.typing-text span::before{
+    content: "software Developer";
     color: #F8C8DC;
-    text-shadow: 0 0 10px #F8C8DC;}
+    animation: TWTXT 10s infinite;
+}
+.typing-text span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: I-Division 0.6s infinite;
+}
+
+@keyframes TWTXT{
+    0%,14%{content:"Teoría Musical";}
+    15%,28%{content:"Desarrollo Web";}
+    29%,42%{content:"Fotografía";}
+    43%,50%{content:"Desarrollo Móvil";}
+    51%,64%{content:"Ilustración Tradicional";}
+    65%,78%{content:"Animación";}
+    79%,100%{content:"Ilustración Digital";}
+}
+
+@keyframes I-Division{
+    to{border-left: 3px solid #F8C8DC;}}
+
 .content p{
     font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
     margin: 10px 0;}
@@ -336,20 +368,16 @@ footer{
     background: #F8C8DC;
     padding: 15px 0;
     text-align: center;
-    font-family: 'Poppins, sans-serief';
-}
+    font-family: 'Poppins, sans-serief';}
 footer .text span{
     font-size: 17px;
     font-weight: 400;
-    color: white;
-}
+    color: white;}
 footer .text span a{
     font-weight: 500;
-    color: white;
-}
+    color: white;}
 footer .text span a:hover{
-    text-decoration: underline;
-}
+    text-decoration: underline;}
 .scroll-button a{
     position: fixed;
     bottom: 20px;
@@ -360,8 +388,7 @@ footer .text span a:hover{
     font-size:  18px;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.15);
-    display: none;
-}
+    display: none;}
 
 @media (max-width: 1000px){
     .about .about-details{
