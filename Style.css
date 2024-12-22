@@ -314,6 +314,47 @@ section .button button:hover{
 .skills-details .boxes .per{
     font-size: 60px;
     color: #F8C8DC;}
+/*PGskills*/
+.PGskills{
+    background: black;}
+.PGskills .content{
+    padding:  40px 0;}
+.PGskills .PGskills-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+.PGskills-details .text{
+    width: 50%;}
+.PGskills-details p{
+    color: white;
+    text-align: justify;}
+.PGskills-details .experience{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;}
+.PGskills-details .experience .num{
+    color: #F8C8DC;
+    font-size: 80px;}
+.PGskills-details .experience .exp{
+    color:  white;
+    margin-left:  20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 6px;}
+.PGskills-details .boxes{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;}
+.PGskills-details .box{
+    width: calc(100% /2 - 20px);
+    margin: 20px 0;}
+.PGskills-details .boxes .topic{
+    font-size: 20px;
+    color: #F8C8DC;}
+.PGskills-details .boxes .per{
+    font-size: 60px;
+    color: #F8C8DC;}
 /*Services*/
 .services .boxes{
     display: flex;
