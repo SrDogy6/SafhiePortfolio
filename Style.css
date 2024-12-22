@@ -43,16 +43,6 @@ nav{
     color: #F8C8DC;
     text-shadow: 0 0 10px #F8C8DC;}
 /*Navegation Upper Bar*/
-.hamburg,
-.cancel{
-    cursor: pointer;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    color: white;
-    opacity: 0;
-    pointer-events: none;
-    font-size: clamp(2.5rem, 0.5rem +5vw, 3rem);}
 .nav-container .links{
     display: flex;}
 .nav-container .links a{
@@ -104,22 +94,18 @@ section{
 section .main-container{
     display: flex;
     justify-content: space-between;
-    padding-left: 100px;
     align-items: center;}
 .main-container .image{
     width: 500px;
-    height: 80vh;
-    border-radius: 100%;
+    height: 50vh;
+    border-radius: 10%;
     overflow: hidden;
-    box-shadow: 0 0 50px white;}
+    box-shadow: 0 0 20px gray;}
 .main-container .image img{
     width: 100%;}
 .main-container .image:hover{
-    animation: animate 1.5s ease-in-out infinite;}
-@keyframes animate{
-    0%{scale: 1;}
-    50%{scale: 1.05;}
-    100%{scale: 1;}}
+    scale:  1.07;
+    transition: 0.2s linear;}
 .main-container .content{
     color: white;
     width: 40%;}
@@ -147,20 +133,17 @@ section .main-container{
     background-color: black;
     position: absolute;
     width: calc(100% + 8px);
-    height: 100%;
+    height: 80%;
     border-left: 3px solid black;
-    right: -8;
     animation: I-Division 0.6s infinite;
 }
 
 @keyframes TWTXT{
-    0%,14%{content:"Teoría Musical";}
-    15%,28%{content:"Desarrollo Web";}
-    29%,42%{content:"Fotografía";}
-    43%,50%{content:"Desarrollo Móvil";}
-    51%,64%{content:"Ilustración Tradicional";}
-    65%,78%{content:"Animación";}
-    79%,100%{content:"Ilustración Digital";}
+    0%,20%{content:"Teoria Musical";}
+    21%,40%{content:"Desarrollo";}
+    41%,60%{content:"Fotografía";}
+    61%,80%{content:"Animación";}
+    81%,100%{content:"Ilustración";}
 }
 
 @keyframes I-Division{
@@ -177,14 +160,14 @@ section .main-container{
     height: 3rem;
     background-color: transparent;
     border: 0.2rem solid #F8C8DC;
-    border-radius: 50%;
+    border-radius: 20%;
     color: #F8C8DC;
-    margin: 5px 15px;
+    margin: 1px 1px;
     font-size: 1.5rem;
     transition: 0.2s linear;}
 .social-links i:hover{
-    scale:  1.3;
-    color: black;
+    scale:  1.5;
+    color: white;
     background-color: #F8C8DC;
     filter: drop-shadow(0 0 10px #F8C8DC);}
 .content button{
@@ -208,13 +191,13 @@ section .main-container{
     box-shadow: 0 0 40px #F8C8DC;}
 /*About Section*/
 section .content{
-    width: 80%;
+    width: 50%;
     margin:  0px auto;
     font-family: 'Poppins', sans-serif;}
 .about .about-details{
     display: flex;
     justify-content: space-between;
-    align-items: center;}
+    align-items: right;}
 section .title{
     display: flex;
     justify-content: center;
