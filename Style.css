@@ -39,12 +39,10 @@ nav{
     align-items: center;}
 
 .logo{
-    color: green;
     font-size: 3rem;
     font-weight: bold;}
 .logo span{
-    color: black;
-    text-shadow: 0 0 10px gray;}
+    color: black;}
 /*Navegation Upper Bar*/
 .nav-container .links{
     display: flex;}
@@ -82,8 +80,7 @@ section .main-container{
     height: 50vh;
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
-    overflow: hidden;
-    box-shadow: 0 0 20px white;}
+    overflow: hidden;}
 .main-container .image img{
     width: 100%;}
 .main-container .image:hover{
@@ -105,9 +102,8 @@ section .main-container{
 .typing-text span{
     position: relative;}
 .typing-text span::before{
-    content: "software Developer";
+    content: "";
     color: black;
-    text-shadow: 0 0 10px gray;
     animation: TWTXT 10s infinite;}
 .typing-text span::after{
     content: "";
@@ -169,17 +165,25 @@ section .main-container{
     scale: 1.1;
     background-color: #8d44f7;
     font-weight: 700;}
-/*About Section*/
+/*Section*/
+section .button button{
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #363636;
+    color: white;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease;}
+section .button button:hover{
+    background-color: white;
+    color: black;}
 section .content{
     width: 50%;
     margin:  0px auto;
     font-family: 'Poppins', sans-serif;}
-.about {
-    background-color: #d3d3d3;}
-.about .about-details{
-    display: flex;
-    justify-content: space-between;
-    align-items: right;}
 section .title{
     display: flex;
     justify-content: center;
@@ -204,14 +208,6 @@ section .title span::after{
     width: 70%;
     left: 50%;
     transform: translateX(-50%);}
-.about .about-details .left{
-    width: 45%;}
-.about .left img{
-    height: 400px;
-    width: 400px;
-    object-fit: cover;}
-.about-details .right{
-    width: 55%;}
 section .topic{
     color: #363636;
     font-size: 25px;
@@ -220,22 +216,7 @@ section .topic{
 .about-details .right p{
     text-align: justify;
     color: #363636;}
-section .button{
-    margin: 16px 0;}
-section .button button{
-    outline: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    font-size: 25px;
-    font-weight: 400;
-    background: #363636;
-    color: white;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: all 0.4s ease;}
-section .button button:hover{
-    background-color: white;
-    color: black;}
+
 /*PGskills*/
 .PGskills{
     background: #d3d3d3;}
