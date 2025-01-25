@@ -350,6 +350,8 @@ footer .text span a{
 footer .text span a:hover{
     text-decoration: underline;}
 
+/*Phone Ajustement*/
+
 @media (max-width: 1000px){
 
     .nav-container .links a{
@@ -367,8 +369,7 @@ footer .text span a:hover{
         display: inline;}
 
     .main-container .image{
-        display: none;
-    }
+        display: none;}
 
     .content h1{
         font-size: 2rem;}
@@ -391,10 +392,10 @@ footer .text span a:hover{
         margin: 0px 0px;}
     
     .content button{
-    width: 60%;
-    height: 10vh;
-    margin: 5px 20%;
-    font-size: 80%;}
+        width: 60%;
+        height: 10vh;
+        margin: 5px 20%;
+        font-size: 80%;}
 
     section .button button{
         font-size: 80%}
@@ -432,3 +433,20 @@ footer .text span a:hover{
         height: 30%;}
     .skills-details .boxes .per{
         font-size: 32px;}
+
+    .services .boxes .box{
+        margin: 5px 0;
+        width: calc(100%/2 - 10px);
+        text-align: center;
+        border-radius: 12px;
+        padding: 20px 10px;}
+    .services .boxes .box .icon{
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        margin: 0 auto 10px auto;}
+    section .topic{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;}
+}
