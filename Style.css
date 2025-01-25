@@ -152,7 +152,7 @@ section .main-container{
 .content button{
     width: 50%;
     height: 6vh;
-    margin: 30px 0px;
+    margin: 20px 0px;
     background-color: black;
     color: white;
     border: none;
@@ -349,9 +349,101 @@ footer .text span a:hover{
     text-decoration: underline;}
 
 @media (max-width: 1000px){
-    .main-container .image img{
-        width: 50%;
-        border-top-right-radius: 10%;
-        border-bottom-right-radius: 10%;
+
+    .nav-container .links a{
+    position: relative;
+    font-size: 0.9rem;
+    margin: 0 5px;}
+
+    .logo{
+        font-size: 2rem;
+        font-weight: bold;}
+    .logo span{
+        color: black;}
+
+    section .main-container{
+        display: inline;}
+
+    .main-container .image{
+        display: none;
     }
+
+    .content h1{
+        font-size: 2rem;}
+    
+    .main-container .content{
+        width: 80%;}
+
+    section .content{
+        width: 80%;
+        margin: 10%;}
+
+    .typing-text{
+        font-size: 20px;}
+
+    .social-links i{
+        width: 10%;
+        height: 2rem;
+        border: 0rem solid black;
+        border-radius: 20%;
+        margin: 0px 0px;}
+    
+    .content button{
+    width: 60%;
+    height: 10vh;
+    margin: 5px 20%;
+    font-size: 80%;}
+
+    section .button button{
+        font-size: 80%}
+
+
+    .PGskills-details .experience{
+        display: inline;}
+    .PGskills-details .experience .num{
+        font-size: 50px;}
+    .PGskills-details .experience .exp{
+        font-size: 14px;
+        margin: 0 0px;}    
+    .PGskills-details .boxes{
+        width: 85%;}
+    .PGskills-details .box{
+        width: calc(100% /3 - 15px);}
+    .PGskills-details .boxes .topic{
+        font-size: 11px;}
+    .PGskills-details .boxes .per{
+        font-size: 34px}
+    
+    .skills-details .experience{
+        display: inline;}
+    .skills-details .experience .num{
+        font-size: 50px;}
+    .skills-details .experience .exp{
+        font-size: 14px;
+        margin: 0 0px;}    
+    .skills-details .boxes{
+        width: 85%;}
+    .skills-details .box{
+        width: calc(100% /3 - 10px);}
+    .skills-details .boxes .topic{
+        font-size: 10px;
+        height: 30%;}
+    .skills-details .boxes .per{
+        font-size: 32px;}
+
+    .services .boxes .box{
+            margin: 5px 0;
+            width: calc(100%/2 - 10px);
+            text-align: center;
+            border-radius: 12px;
+            padding: 20px 10px;}
+    .services .boxes .box .icon{
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        margin: 0 auto 10px auto;}
+    section .topic{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;}
 }
