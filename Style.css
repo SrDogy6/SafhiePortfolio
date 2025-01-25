@@ -70,16 +70,18 @@ nav{
 /*Section*/
 section{
     width: 100%;
-    min-height: 55vh;}
+    min-height: 50vh;}
 section .main-container{
     display: flex;
     justify-content: space-between;
     align-items: normal;}
 .main-container .image{
-    width: 50vh;
-    height: 50vh;
-    border-top-right-radius: 10%;
-    border-bottom-right-radius: 10%;
+    width: 30%;
+    height: 30%;
+    border-top-right-radius: 90%;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 70%;
+    border-bottom-right-radius: 50%;
     overflow: hidden;}
 .main-container .image img{
     width: 100%;}
@@ -430,20 +432,3 @@ footer .text span a:hover{
         height: 30%;}
     .skills-details .boxes .per{
         font-size: 32px;}
-
-    .services .boxes .box{
-            margin: 5px 0;
-            width: calc(100%/2 - 10px);
-            text-align: center;
-            border-radius: 12px;
-            padding: 20px 10px;}
-    .services .boxes .box .icon{
-        height: 50px;
-        width: 50px;
-        line-height: 50px;
-        margin: 0 auto 10px auto;}
-    section .topic{
-        font-size: 20px;
-        font-weight: 500;
-        margin-bottom: 10px;}
-}
