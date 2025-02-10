@@ -1,115 +1,117 @@
-/*Google Font CDN Link*/
 @import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B);
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    scroll-behavior: smooth;}
+    text-decoration: none;}
 body{
     width: 100%;
     height: auto;
-    background-color: #d3d3d3;
+    background-color: #2c3439;
     overflow-x: hidden;}
-/*custom scroll bar css*/
+
 ::-webkit-scrollbar{
     width: 10px;
     border-bottom-right-radius: 20%;
     border-bottom-left-radius: 20%;}
 ::-webkit-scrollbar-track{
-    background: black;}
+    background: #2c3439;}
 ::-webkit-scrollbar-thumb{
-    background: #363636;
-    border-radius: 12px;
-    transition: all 0.3s ease;}
-::-webkit-scrollbar-thumb:hover{
-    background: gray;
-}
-/*nav bar styling*/
+    background: gray;}
+
+h1, h2, h3, h4, h5, a, div, span{color: white;}
+
+h1{font-size: 5vh;
+    font-weight: 300;}
+h2{font-size: 3vh;
+    font-weight: 300;}
+h3{font-size: 1.5vh;
+    font-weight: 200;}
+
 nav{
     width: 100%;
-    height: 7vh;
-    background-color: #d3d3d3;}
-.nav-container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;}
+    height: 5vh;
+    background-color: #20262a;}
 
+.menu{
+    display: flex;
+    flex-direction: row;}
+    
 .logo{
-    font-size: 3rem;
-    font-weight: bold;}
-.logo span{
-    color: black;}
-/*Navegation Upper Bar*/
-.nav-container .links{
-    display: flex;}
-.nav-container .links a{
+    height: fit-content;
+    font-weight: bold;
+    background-color: rgb(206, 121, 149);}
+.logo h1{
+    color: white;
+    font-size: 3vh;
+    font-weight: 500;}
+
+.menu-links{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;}
+.menu-links .link a{
     position: relative;
-    font-size: 1.2rem;
-    color: #363636;
-    margin: 0 20px;
+    font-size: 2vh;
+    margin: 0 10px;
     text-decoration: none;
-    font-weight: 550;
-    transition: 0.3s linear;}
-.nav-container .links a::before{
+    transition: 0.3s linear;
+    font-weight: 200;}
+.menu-links .link a::before{
     position: absolute;
     content: "";
     bottom: -3px;
-    left: 0;
+    right: 10;
     width: 0%;
     height: 3px;
-    background-color: #e2619f;
+    background-color: rgb(206, 121, 149);
     transition: 0.2s linear;}
-.nav-container .links a:hover::before{
+.menu-links .link a:hover::before{
     width: 100%;}
-.nav-container .links a:hover{
-    color: #e2619f;}
-/*Section*/
+.menu-links .link a:hover{
+    color: rgb(206, 121, 149);}
+
 section{
     width: 100%;
-    min-height: 50vh;}
-section .main-container{
+    min-height: 32vh;}
+
+.wallper img{
+    width: 100%;
+    height: 25vh;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20%, transparent 100%);}
+
+section .about{
     display: flex;
     justify-content: space-between;
-    align-items: normal;}
-.main-container .image{
-    width: 30%;
-    height: 30%;
-    border-top-right-radius: 90%;
-    border-bottom-left-radius: 100%;
-    border-top-left-radius: 70%;
-    border-bottom-right-radius: 50%;
+    align-items: center;}
+.about{display: flex;}
+.about .image{
+    margin-left: 15%;
+    margin-right: 10%;
+    width: 20%;
+    height: 20%;
+    border-radius: 10%; 
     overflow: hidden;}
-.main-container .image img{
-    width: 100%;}
-.main-container .image:hover{
-    scale:  1.07;
-    transition: 0.2s linear;}
-.main-container .content{
-    color: #363636;
-    width: 40%;}
-.content h1{
-    font-size: clamp(5rem, 1rem + 5vw, 1.8rem);}
-.content h1 span{
-    color: white;
-    text-shadow: 0 0 10px gray;}
+.about .image img{width: 100%;}
+.about .about-txt{
+    display: table;
+    width: 40%;}  
+.about-txt h1{
+    text-align: right;
+    text-shadow: 0 0 15px black;}
 
 .typing-text{
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;}
+    text-align: right}
 .typing-text span{
-    position: relative;}
+    position: relative;
+    font-size: 3vh;
+    font-weight: 300;}
 .typing-text span::before{
     content: "";
-    color: black;
+    color: white;
     animation: TWTXT 10s infinite;}
 .typing-text span::after{
     content: "";
-    background-color: transparent;
     position: absolute;
     width: calc(100% + 8px);
     height: 80%;
@@ -117,185 +119,97 @@ section .main-container{
     animation: I-Division 0.6s infinite;}
 
 @keyframes TWTXT{
-    0%,20%{content:"Teoria Musical";}
-    21%,40%{content:"Desarrollo";}
+    0%,20%{content:"Musica";}
+    21%,40%{content:"Programación";}
     41%,60%{content:"Fotografía";}
     61%,80%{content:"Animación";}
-    81%,100%{content:"Ilustración";}
-}
-
+    81%,100%{content:"Ilustración";}}
 @keyframes I-Division{
     to{border-left: 3px solid #F8C8DC;}}
 
-.content p{
-    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
-    margin: 10px 0px;}
+.about-txt h3{text-align: right}
 
-.social-links{
-    margin: 0px 0px;}
-
-.social-links i{
+.btn-link{    text-align: right;}
+.btn-link i{
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 3rem;
     height: 3rem;
     background-color: transparent;
-    border: 0.2rem solid black;
+    border: 0.2rem solid white;
     border-radius: 20%;
-    color: black;
+    color: white;
     margin: 1px 1px;
     font-size: 1.5rem;
     transition: 0.2s linear;}
-.social-links i:hover{
-    scale:  1.5;
-    color: white;
-    background-color: black;}
-.content button{
+.btn-link i:hover{
+    color: #20262a;
+    background-color: white;}
+
+.about-txt .twitch-btn,
+.about-txt .button{
+    text-align: center;
+}
+.about-txt .twitch-btn button,
+.about-txt .button button{
     width: 50%;
-    height: 6vh;
+    height: 4vh;
     margin: 20px 0px;
-    background-color: black;
+    background-color: #20262a;
     color: white;
     border: none;
     outline: none;
     font-size: 120%;
-    font-weight: 700;
-    border-radius: 5px;
+    font-weight: 300;
     transition: 0.2s linear;}
-.content button:hover{
-    scale: 1.1;
+.about-txt .twitch-btn button:hover{
     background-color: #8d44f7;
     font-weight: 700;}
-/*Section*/
-section .button button{
-    outline: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    font-size: 25px;
-    font-weight: 400;
-    background: #363636;
-    color: white;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: all 0.4s ease;}
-section .button button:hover{
-    background-color: white;
-    color: black;}
-section .content{
-    width: 50%;
-    margin:  0px auto;
-    font-family: 'Poppins', sans-serif;}
-section .title{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;}
-section .title span{
-    color: black;
-    font-size: 30px;
-    font-weight: 600;
-    position: relative;
-    padding-bottom: 8px;}
-section .title span::before,
-section .title span::after{
-    content: '';
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #e2619f;
-    left: 0;
-    bottom: 0;}
-section .title span::after{
-    bottom: -7px;
-    width: 70%;
-    left: 50%;
-    transform: translateX(-50%);}
-section .topic{
-    color: #363636;
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;}
-.about-details .right p{
-    text-align: justify;
-    color: #363636;}
+.about-txt .button button:hover{
+    background-color: rgb(206, 121, 149);
+    font-weight: 700;}
+    
+.skills {width: 50%;
+    margin:  0px auto;}
 
-/*PGskills*/
-.PGskills{
-    background: #d3d3d3;}
-.PGskills .content{
-    padding:  40px 0;}
-.PGskills .PGskills-details{
+.skills h2{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 40px;}
+
+.skills .details{
     display: flex;
     align-items: center;}
-.PGskills-details .text{
+.details .text{
     width: 50%;}
-.PGskills-details .experience{
-    display: inline;
-    align-items: center;
-    margin: 0 10px;}
-.PGskills-details .experience .num{
-    color: #e2619f;
+.details .num{
+    color: rgb(206, 121, 149);
     font-size: 160px;}
-.PGskills-details .experience .exp{
-    color:  #363636;
+.details .exp{
     margin-left:  20px;
-    font-size: 32px;
-    font-weight: 500;
-    margin: 0 6px;}
-.PGskills-details .boxes{
+    font-size: 2vh;
+    font-weight: 300;
+    margin: 0 6px;
+    display: inline;}
+.details .bx-info{
+    margin-left: auto;
     width: 45%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;}
-.PGskills-details .box{
-    width: calc(100% /2 - 20px);}
-.PGskills-details .boxes .topic{
-    font-size: 20px;
-    height: 30%;
-    color: #363636;}
-.PGskills-details .boxes .per{
-    font-size: 60px;
-    color: #363636;}
-/*skills*/
-.skills{
-    background: #d3d3d3;}
-.skills .content{
-    padding:  40px 0;}
-.skills .skills-details{
-    display: flex;
-    align-items: center;}
-.skills-details .text{
-    width: 50%;}
-.skills-details .experience{
-    display: inline;
-    align-items: center;
-    margin: 0 10px;}
-.skills-details .experience .num{
-    color: #e2619f;
-    font-size: 160px;}
-.skills-details .experience .exp{
-    color:  #363636;
-    margin-left:  20px;
-    font-size: 32px;
-    font-weight: 500;
-    margin: 0 6px;}
-.skills-details .boxes{
-    width: 45%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;}
-.skills-details .box{
-    width: calc(100% /2 - 20px);}
-.skills-details .boxes .topic{
-    font-size: 20px;
-    height: 30%;
-    color: #363636;}
-.skills-details .boxes .per{
-    font-size: 60px;
-    color: #363636;}
-/*Services*/
-.services{
-    background-color: #d3d3d3;}
+.details .box{
+    width: calc(100% /3 - 20px);}
+.details .bx-info .topic{
+    font-size: 1.5vh;
+    height: 35%;
+    margin-bottom: auto;}
+.details .bx-info .per{
+    font-size: 3.5vh;}
+
+.services {width: 50%;
+    margin:  0px auto;}
+.services h2{text-align: left;}
 .services .boxes{
     display: flex;
     flex-wrap: wrap;
@@ -308,15 +222,13 @@ section .topic{
     padding: 30px 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
     cursor: default;
-    color: #363636;
     transition: all 0.4s ease;}
 .services .boxes .box:hover{
-    background: black;
-    color: white;}
+    background: #20262a;}
 .services .boxes .box .icon{
     height: 50px;
     width: 50px;
-    background: black;
+    background: #20262a;
     border-radius: 50%;
     text-align: center;
     line-height: 50px;
@@ -326,128 +238,87 @@ section .topic{
     transition: all 0.4s ease;}
 .boxes .box:hover .icon{
     background-color: white;
-    color: black;}
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
-    color: white;
-    transition: all 0.4s ease;}
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
-    color:  white;}
-/*footer*/
+    color: #20262a;}
+
 footer{
-    background: #d3d3d3;
+    background: #20262a;
     padding: 15px 0;
-    text-align: center;
-    font-family: 'Poppins, sans-serief';}
+    text-align: center;}
 footer .text span{
-    font-size: 17px;
-    font-weight: 400;
-    color: #363636;}
+    font-size: 1.5vh;
+    font-weight: 300;}
 footer .text span a{
     font-weight: 500;
-    color: #e2619f;}
+    color: rgb(206, 121, 149);}
 footer .text span a:hover{
     text-decoration: underline;}
 
-/*Phone Ajustement*/
+
 
 @media (max-width: 1000px){
 
-    .nav-container .links a{
-    position: relative;
-    font-size: 0.9rem;
-    margin: 0 5px;}
-
-    .logo{
-        font-size: 2rem;
-        font-weight: bold;}
-    .logo span{
-        color: black;}
-
-    section .main-container{
-        display: inline;}
-
-    .main-container .image{
-        margin:  0px auto;
-        width: 40%;
-        height: 40%;}
-
-    .content h1{
-        font-size: 2rem;}
+h1{font-size: 100%;
+    font-weight: 300;}
+h2{font-size: 70%;
+    font-weight: 300;}
+h3{font-size: 50%;
+    font-weight: 200;}
     
-    .main-container .content{
-        width: 80%;}
-
-    section .content{
-        width: 80%;
-        margin: 10%;}
-
-    .typing-text{
-        font-size: 20px;}
-
-    .social-links i{
-        width: 10%;
-        height: 2rem;
-        border: 0rem solid black;
-        border-radius: 20%;
-        margin: 0px 0px;}
+nav{text-align: center}
     
-    .content button{
-        width: 60%;
-        height: 6vh;
-        margin: 5px 20%;
-        font-size: 80%;}
+.menu{display: inline}
+.about .image{
+    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 30%;
+    height: 30%;
+    border-radius: 5%; ;}
+.about .image img{width: 100%;}
+.about .about-txt{
+    width: 50%;}  
 
-    section .button button{
-        font-size: 80%}
+.typing-text span{font-size: 100%;}
 
+.btn-link i{
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+    border: 0;
+    border-radius: 100%;
+    margin: 0px 0px;
+    font-size: 70%;}
+.about-txt .twitch-btn button,
+.about-txt .button button{
+    width: 70%;
+    height: 50%;
+    margin: 1% 0px;
+    font-size: 70%;}
 
-    .PGskills-details .experience .num{
-        font-size: 50px;}
-    .PGskills-details .experience .exp{
-        font-size: 14px;
-        margin: 0 0px;}    
-    .PGskills-details .boxes{
-        width: 85%;}
-    .PGskills-details .box{
-        width: calc(100% /3 - 15px);}
-    .PGskills-details .boxes .topic{
-        font-size: 65%;}
-    .PGskills-details .boxes .per{
-        font-size: 34px}
+.skills {width: 80%;}
 
-    .skills-details .experience .num{
-        font-size: 50px;}
-    .skills-details .experience .exp{
-        font-size: 14px;
-        margin: 0 0px;}    
-    .skills-details .boxes{
-        width: 85%;}
-    .skills-details .box{
-        width: calc(100% /3 - 10px);}
-    .skills-details .boxes .topic{
-        font-size: 65%;
-        height: 30%;}
-    .skills-details .boxes .per{
-        font-size: 32px;}
+.skills h2{
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;}
+.details .text{
+    width: 30%;}
+.details .num{
+    font-size: 300%;}
+.details .exp{
+    margin-left:  20px;
+    font-size: 50%;}
+.details .bx-info{
+    width: 50%;}
+.details .box{
+    width: calc(100% /3 - 10px);}
+.details .bx-info .topic{
+    font-size: 50%;
+    height: 50%;
+    margin-bottom: auto;}
+.details .bx-info .per{
+    font-size: 100%;}
 
-    .services .boxes .box{
-        margin: 5px 0;
-        width: calc(100%/3 - 10px);
-        text-align: center;
-        border-radius: 12px;
-        padding: 20px 10px;}
-    section .topic{
-        font-size: 80%;
-        font-weight: 500;
-        margin-bottom: 10px;}
+.services {width: 80%;}
 
-    section .title span{
-        font-size: 20px;}
-
-    section{
-        width: 100%;
-        min-height: 10%;}
-
-    }
+}
