@@ -259,7 +259,7 @@ footer .text span a:hover{
 
 
 
-@media (max-width: 1000px){
+@media (width: auto,max-width: 1000px){
 
 h1{font-size: 100%;
     font-weight: 300;}
